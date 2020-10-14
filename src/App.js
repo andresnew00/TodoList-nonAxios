@@ -65,12 +65,14 @@ class App extends React.Component {
             path="/"
             render={(props) => (
               <React.Fragment>
+                <div className="container">
                 <AddTodo addTodo={this.addTodo} />
                 <Todos
                   markComplete={this.markComplete}
                   todos={this.state.todos}
                   deleteItem={this.deleteItem}
                 />
+                </div>
               </React.Fragment>
             )}
           />
